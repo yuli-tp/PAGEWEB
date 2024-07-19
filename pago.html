@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cancelación del Pedido</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <form id="paymentForm">
+
+        <div class="row">
+
+            <div class="col">
+
+                <h3 class="title">Cancelación del Pedido</h3>
+
+                <div class="inputBox">
+                    <span>Nombre Completo :</span>
+                    <input type="text" placeholder="Juan Gutierrez">
+                </div>
+
+                <div class="inputBox">
+                    <span>Email :</span>
+                    <input type="email" placeholder="ejemplo@ejemplo.com">
+                </div>
+
+                <div class="inputBox">
+                    <span>Dirección :</span>
+                    <input type="text" placeholder="calle - avenida - distrito">
+                </div>
+            </div>
+
+            <div class="col">
+
+                <h3 class="title">Agregar Tarjeta</h3>
+
+                <div class="inputBox">
+                    <span>Tarjetas que se Aceptan :</span>
+                    <img src="images/pay.png" alt="">
+                </div>
+                <div class="inputBox">
+                    <span>Nombre Completo:</span>
+                    <input type="text" placeholder="Carlos Andre Gutierrez Perez">
+                </div>
+                <div class="inputBox">
+                    <span>Número de la Tarjeta :</span>
+                    <input type="text" placeholder="1111-2222-3333-4444">
+                </div>
+                <div class="flex">
+                    <div class="inputBox">
+                        <span>Fecha de Expiración:</span>
+                        <input type="text" placeholder="MM/AAAA">
+                    </div>
+                    <div class="inputBox">
+                        <span>CVV :</span>
+                        <input type="text" placeholder="123">
+                    </div>
+                </div>
+
+            </div>
+    
+        </div>
+
+        <input type="submit" value="Finalizar Pedido" class="submit-btn">
+
+    </form>
+
+</div>
+
+<script>
+    document.getElementById('paymentForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        alert('El pedido ha sido finalizado. Gracias por su compra.');
+
+        window.location.href = 'index.php';
+    });
+</script>
+    
+</body>
+</html>

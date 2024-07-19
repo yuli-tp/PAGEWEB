@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brosso Chicken</title>
+    <link rel="icon" type="image/icon" href="images/images__1_-removebg-preview.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/inicio.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">
+            <img src="images/images__1_-removebg-preview.png" alt="">
+            <span>Brosso Chicken</span>
+        </a>
+
+        <nav class="navbar">
+                <a href="index.php">Inicio</a>
+                <a href="menu.html">Menú</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="blogs.html">Blogs</a>
+        </nav>
+
+        <div class="icons">
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class="fas fa-circle-user" id="login-btn"></div>
+            <div class="fas fa-bars" id="menu-btn"></div>
+            <div class="fas fa-right-to-bracket" id="cerrar-btn"></div>
+        </div>
+
+        <form action="php/busqueda.php" method="post" class="search-form">
+            <input type="search" id="search-box" name="search" placeholder="Buscar productos...">
+            <button type="submit">
+                <label for="search-box" class="fa fa-search"></label>
+            </button>
+        </form>
+
+    </header>
+
+    <section class="inicio" id="inicio">
+        <div class="content">
+            <h3>Descubre todo lo que tenemos para ti</h3>
+            <p>Pollo a la brasa, papas fritas, chaufita, nuestras ensaladas y mucho más.</p>
+
+            <a href="menu.html" class="btn">Compra ahora</a>
+        </div>
+    </section>
+
+    <!--Blogs-->
+    <section class="blogs" id="blogs">
+        <h1 class="heading">Nuestro <span>blogs</span></h1>
+        <div class="box-container">
+
+            <div class="box">
+                <img src="images/Carnes.-Asados.-Parrilladas.jpg" alt="">
+                <div class="content">
+                    <div class="icono">
+                        <a href="#"><i class="fas fa-user"></i> Por usuario</a>
+                        <a href="#"><i class="fas fa-calendar"></i> 22 de Mayo, 2024</a>
+                    </div>
+                    <h3>Calidad y frescura en alimentos</h3>
+                    <p>Descubre nuestros nuevos platos, una función perfecta de calidad y frescura.</p>
+                    <a href="#" class="btn">Leer más</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/motorizado_delicax.png" alt="">
+                <div class="content">
+                    <div class="icono">
+                        <a href="#"><i class="fas fa-user"></i> Por usuario</a>
+                        <a href="#"><i class="fas fa-calendar"></i> 12 de Mayo, 2024</a>
+                    </div>
+                    <h3>Nuevos lugares para llevar a tu hogar</h3>
+                    <p>Ya no tienes que preocuparte por venir a nosotros, ahora nosotros vamos a ti.</p>
+                    <a href="#" class="btn">Leer más</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/imagen-medios-de-pago-def-300x147.jpg" alt="">
+                <div class="content">
+                    <div class="icono">
+                        <a href="#"><i class="fas fa-user"></i> Por usuario</a>
+                        <a href="#"><i class="fas fa-calendar"></i> 02 de Mayo, 2024</a>
+                    </div>
+                    <h3>Nuevos métodos de pago</h3>
+                    <p>Desde pagos móviles hasta opciones de pago en línea seguras, ahora es más fácil.</p>
+                    <a href="#" class="btn">Leer más</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    
+    
+<!--footer-->
+
+<section class="footer">
+    <div class="box-container">
+
+        <div class="box">
+            <h3><img src="images/images__1_-removebg-preview.png" alt="">  Brosso Chicken </h3>
+            <hr><hr>
+            <div class="share">
+                <a href="https://www.facebook.com/profile.php?id=100063678271239&mibextid=ZbWKwL" class="fa-brands fa-facebook"></a>
+                <a href="https://www.google.com/maps/place/Poller%C3%ADa+Centro+Hist%C3%B3rico+Brosso/@-13.5193487,-71.981334,17z/data=!3m1!4b1!4m6!3m5!1s0x916dd72c11b703d9:0x304a933db4c2e203!8m2!3d-13.5193487!4d-71.9787591!16s%2Fg%2F1thf9mnw?hl=es-PE&entry=ttu#:~:text=https%3A//maps.app.goo.gl/zxH9TbzJoC3a3UaA8" class="fas fa-location-dot"></a>
+                <a href="http://wa.me/51984054080" class="fa-brands fa-whatsapp"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3>Contacto</h3>
+            <a href="#" class="links"><i class="fas fa-phone"></i> +51 984054080</a>
+            <a href="#" class="links"><i class="fas fa-envelope"></i>chickenbrosso@gmail.com</a>
+            <a href="#" class="links"><i class="fas fa-map-marker"></i>Calle San Andres 221-225, Cusco, Perú</a>
+        </div>
+
+        <div class="box">
+            <h3>Enlaces</h3>
+            <a href="index.php" class="links"><i class="fas fa-arrow-right"></i>Inicio</a>
+            <a href="menu.html" class="links"><i class="fas fa-arrow-right"></i>Menú</a>
+            <a href="nosotros.html" class="links"><i class="fas fa-arrow-right"></i>Nosotros</a>
+            <a href="blogs.html" class="links"><i class="fas fa-arrow-right"></i>Blogs</a>
+        </div>
+
+        <div class="box">
+            <h3>Métodos de pago</h3>
+            <img src="images/pagas.png" class="payment-img" alt="">
+        </div>
+
+    </div>
+
+    <div class="credit">&copy; 2024 Brosso Chicken. Todos los derechos reservados.</div>
+</section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/inicio.js"></script>
+</body>
+</html>

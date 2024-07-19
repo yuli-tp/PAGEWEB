@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Brosso Chicken</title>
+        <link rel="icon" type="image/icon" href="images/images__1_-removebg-preview.png">
+        <link rel="stylesheet" href="css/menu.css">
+        <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="header">
+            <a href="#" class="logo">
+                <img src="images/images__1_-removebg-preview.png" alt="">
+                <span>Brosso Chicken</span>
+            </a>
+
+            <nav class="navbar">
+                <a href="index.php">Inicio</a>
+                <a href="menu.html">Menú</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="blogs.html">Blogs</a>
+            </nav>
+
+            <div class="icons">
+                <div class="fas fa-search" id="search-btn"></div>
+                <div class="fas fa-circle-user" id="login-btn"></div>
+                <div class="fas fa-bars" id="menu-btn"></div>
+                <div class="fas fa-right-to-bracket" id="cerrar-btn"></div>
+            </div>
+
+            <form action="php/busqueda.php" method="post" class="search-form">
+                <input type="search" id="search-box" name="search" placeholder="Buscar productos...">
+                <button type="submit">
+                    <label for="search-box" class="fa fa-search"></label>
+                </button>
+            </form>
+    
+        </div>
+
+        <section id="page-header">
+        </section>
+
+        <div class="carts">
+            <div class="cart"><i class="fa-solid fa-cart-shopping"></i><p id="count">0</p></div>
+        </div>
+
+        <div class="container">
+            <div id="root"></div>
+            <div class="sidebar">
+                <div class="head"><p>MI PEDIDO</p></div>
+                <div id="cartItem">NO HAY PEDIDO</div>
+                <div class="foot">
+                    <h3>Total</h3>
+                    <h2 id="total">S/ 0.00</h2>
+                </div>
+                <button id="checkout-btn" class="button-n">Finalizar Compra</button>
+            </div>
+        </div>
+
+        <script src="js/boton.js"></script>
+    <script>
+        document.getElementById('checkout-btn').onclick = function() {
+            window.location.href = 'pago.html';
+        };
+    </script>
+        <!--footer-->
+
+<section class="footer">
+    <div class="boxs-container">
+
+        <div class="boxs">
+            <h3><img src="images/images__1_-removebg-preview.png" alt="">  Brosso Chicken </h3>
+            <hr><hr>
+            <div class="share">
+                <a href="https://www.facebook.com/profile.php?id=100063678271239&mibextid=ZbWKwL" class="fa-brands fa-facebook"></a>
+                <a href="https://www.google.com/maps/place/Poller%C3%ADa+Centro+Hist%C3%B3rico+Brosso/@-13.5193487,-71.981334,17z/data=!3m1!4b1!4m6!3m5!1s0x916dd72c11b703d9:0x304a933db4c2e203!8m2!3d-13.5193487!4d-71.9787591!16s%2Fg%2F1thf9mnw?hl=es-PE&entry=ttu#:~:text=https%3A//maps.app.goo.gl/zxH9TbzJoC3a3UaA8" class="fas fa-location-dot"></a>
+                <a href="http://wa.me/51984054080" class="fa-brands fa-whatsapp"></a>
+            </div>
+        </div>
+
+        <div class="boxs">
+            <h3>Contacto</h3>
+            <a href="#" class="links"><i class="fas fa-phone"></i> +51 984054080</a>
+            <a href="#" class="links"><i class="fas fa-envelope"></i>chickenbrosso@gmail.com</a>
+            <a href="#" class="links"><i class="fas fa-map-marker"></i>Calle San Andres 221-225, Cusco, Perú</a>
+        </div>
+
+        <div class="boxs">
+            <h3>Enlaces</h3>
+            <a href="index.php" class="links"><i class="fas fa-arrow-right"></i>Inicio</a>
+            <a href="menu.html" class="links"><i class="fas fa-arrow-right"></i>Menú</a>
+            <a href="nosotros.html" class="links"><i class="fas fa-arrow-right"></i>Nosotros</a>
+            <a href="blogs.html" class="links"><i class="fas fa-arrow-right"></i>Blogs</a>
+        </div>
+
+        <div class="boxs">
+            <h3>Métodos de pago</h3>
+            <img src="images/pay.png" class="payment-img" alt="">
+        </div>
+
+    </div>
+
+    <div class="credit">&copy; 2024 Brosso Chicken. Todos los derechos reservados.</div>
+</section>
+
+        <script src="js/boton.js"></script>
+    </body>
+</html>
